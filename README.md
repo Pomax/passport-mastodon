@@ -44,9 +44,9 @@ passport.use(new MastodomStrategy({
 
 ### Authenticate Requests
 
-Use passport.authenticate(), specifying the 'oauth2' strategy, to authenticate requests, making sure to supply the scopes as you used to define your mastodon application.
+Use passport.authenticate(), specifying the 'oauth2' strategy, to authenticate requests, making sure to supply the same scopes that you used to define your mastodon application.
 
-For example, as route middleware in an Express application:
+For example, as route middleware in an Express application with the scopes used in the above "create an application" section:
 
 ```
 app.get('/auth/example',
